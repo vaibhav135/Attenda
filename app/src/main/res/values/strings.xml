@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Attenda</string>
+
+    <string-array name="Course">
+        <item>BsC (hons) Maths</item>
+        <item>BsC (hons) Statistics</item>
+        <item>BsC (hons) Economics</item>
+        <item>BCom (hons)</item>
+        <item>BsC (hons) Computer Sci.</item>
+        <item>BA (hons) English</item>
+        <item>BA (prog.)</item>
+        <item>BA (hons) Psychology</item>
+    </string-array>
+
+    <string-array name="activities">
+        <item>Drama Society</item>
+        <item>Dance Society</item>
+        <item>Music Society</item>
+        <item>Sports club</item>
+        <item>Taekwondo club</item>
+        <item>Athletics</item>
+        <item>Tech society</item>
+    </string-array>
+</resources>

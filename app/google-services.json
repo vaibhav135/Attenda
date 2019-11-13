@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "153649400885",
+    "firebase_url": "https://attenda-6ee8e.firebaseio.com",
+    "project_id": "attenda-6ee8e",
+    "storage_bucket": "attenda-6ee8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153649400885:android:e4e6dc5b76e9176cc8757c",
+        "android_client_info": {
+          "package_name": "com.example.attenda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153649400885-g8j7s52c1qlcds83o4qsknak2ojoks9o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.attenda",
+            "certificate_hash": "fb952a8727f3cba0132d1b8b3a98821464779d55"
+          }
+        },
+        {
+          "client_id": "153649400885-9f5bgh47pelmg72jtvdsgj0cnke2s814.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrY7XB1ZjCQxghQvH03QYjgFbOH1773go"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153649400885-9f5bgh47pelmg72jtvdsgj0cnke2s814.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    >
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="35dp"
+        android:text="Profile"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp">
+
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="145dp"
+        android:textSize="17dp"
+        android:text="Name "
+        />
+
+     <TextView
+         android:id="@+id/fifth"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Gender"
+         android:textSize="17dp"
+         android:layout_below="@id/first"
+         android:layout_marginTop="45dp"/>
+
+    <TextView
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll No. "
+        android:layout_below="@id/fifth"
+        android:layout_marginTop="45dp"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course"
+        android:layout_below="@id/second"
+        android:layout_marginTop="45dp"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:id="@+id/fourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Activities"
+        android:layout_below="@id/third"
+        android:layout_marginTop="45dp"
+        android:textSize="17dp"/>
+
+ <RelativeLayout
+            android:id="@+id/Relative2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fourth"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="145dp">
+
+   <TextView
+         android:id="@+id/pName"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="17dp"
+         android:text="random"
+        />
+
+
+     <TextView
+         android:id="@+id/pGender"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="17dp"
+         android:layout_marginTop="45dp"
+         android:text="random"
+         android:layout_below="@id/pName"
+
+         />
+
+    <TextView
+        android:id="@+id/pRollNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="random"
+        android:layout_below="@id/pGender"
+        android:layout_marginTop="45dp"
+        />
+
+    <TextView
+        android:id="@+id/pCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="random"
+        android:layout_below="@id/pRollNo"
+        android:layout_marginTop="47dp"
+        />
+
+    <TextView
+        android:id="@+id/pActivities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:layout_marginTop="45dp"
+        android:text="random"
+        android:layout_below="@id/pCourse"
+
+        />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
