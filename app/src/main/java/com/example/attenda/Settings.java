@@ -33,7 +33,7 @@ public class Settings extends AppCompatActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if(firebaseAuth.getCurrentUser() == null){
-                    Intent i = new Intent(Settings.this,Login.class);
+                    Intent i = new Intent(Settings.this,googleLogin.class);
                     //i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                     startActivity(i);
                 }

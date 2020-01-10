@@ -25,11 +25,11 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
-public class Login extends AppCompatActivity {
+public class googleLogin extends AppCompatActivity {
 
-    private static final String TAG = "Login";
+    private static final String TAG = "googleLogin";
     private static final int RC_SIGN_IN = 2;
-    SignInButton googlebtn;
+
     GoogleSignInClient mGoogleSignInClient;
     private FirebaseAuth mAuth;
 
@@ -51,15 +51,13 @@ public class Login extends AppCompatActivity {
         Intent i = new Intent();
         i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
-
-        googlebtn = findViewById(R.id.sign_in_button);
         mAuth = FirebaseAuth.getInstance();
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                   if(firebaseAuth.getCurrentUser() != null){
-                      Intent i = new Intent(Login.this,MainActivity.class);
+                      Intent i = new Intent(googleLogin.this,MainActivity.class);
                       //i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                       startActivity(i);
                   }
@@ -72,19 +70,11 @@ public class Login extends AppCompatActivity {
                 .build();
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-        googlebtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                signIn();
-            }
-        });
-
-
 
     }
 
 
-    private void signIn() {
+    public void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent,  RC_SIGN_IN);
     }
@@ -124,7 +114,7 @@ public class Login extends AppCompatActivity {
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
-                            Toast.makeText(Login.this,"connection failed",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(googleLogin.this,"connection failed",Toast.LENGTH_SHORT).show();
                             //updateUI(null);
                         }
 

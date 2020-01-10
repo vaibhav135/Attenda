@@ -88,6 +88,8 @@ public class StartingPage extends AppCompatActivity {
 
     public void sentData(){
             if(data == getdata){
+               //code to save data to realtime database will be written here
+
 
             }
             else{
@@ -111,7 +113,10 @@ public class StartingPage extends AppCompatActivity {
                 return true;
 
             case R.id.settings:
-                startActivity(new Intent(StartingPage.this,Settings.class));
+                startActivity(new Intent(StartingPage.this,Settings.class
+
+
+                ));
 
                 return true;
 

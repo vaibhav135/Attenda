@@ -1,9 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".Register">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+   <TextView
+       android:id="@+id/regtop"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="20dp"
+       android:layout_centerHorizontal="true"
+
+       android:layout_marginTop="30dp"
+       android:text="Register"/>
+
+    <TextView
+        android:id="@+id/ctext"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regtop"
+        android:layout_marginTop="80dp"
+        android:text="create an email" />
+
+    <TextView
+        android:id="@+id/cpass"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ctext"
+        android:layout_marginTop="60dp"
+        android:text="type a password" />
+
+    <TextView
+        android:id="@+id/cconfirm"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cpass"
+        android:layout_marginTop="60dp"
+        android:text="confirm password" />
+
+    <EditText
+        android:id="@+id/createEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="59dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regtop"
+        android:layout_toRightOf="@id/ctext"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+
+        android:id="@+id/createPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_toRightOf="@id/cpass"
+        android:layout_below="@id/createEmail"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:id="@+id/confirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/createPassword"
+        android:layout_toRightOf="@id/cconfirm"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/submitbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmPassword"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="140dp"
+        android:text="submit"
+        android:textAllCaps="false"
+          />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</RelativeLayout>
